@@ -5,9 +5,9 @@ def solution(arr):
     print(mean) #mean
     arr.sort() #median
     if l%2 == 0: 
-        print((arr[int(l/2)-1]+arr[int(l/2)])/2)
+        print((arr[l//2-1]+arr[l//2])//2)
     else:
-        print(arr[int(l/2)-1])
+        print(arr[l//2])
     mod = arr[0] #mod
     cnt = 0
     for i in arr:
